@@ -32,6 +32,9 @@ body {
 }
 
 .output {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: var(--color-dark);
     height: 5rem;
     color: #fff;
@@ -40,9 +43,6 @@ body {
     outline: 1px solid var(--color-med);
     border-radius: 5px;
     padding-right: .5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 #output-top {
