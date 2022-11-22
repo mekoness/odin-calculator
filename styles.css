@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #000;
+    --color-dark: #333;
+    --color-med: #666;
+    --color-light: #999;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: #ccc;
+    margin: 3rem auto;
+    padding: 1rem;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    border: 1px solid var(--color-light);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px var(--color-light);
+}
+
+.output {
+    background-color: var(--color-dark);
+    height: 5rem;
+    color: #fff;
+    grid-column: span 4;
+    text-align: right;
+    outline: 1px solid var(--color-med);
+    border-radius: 5px;
+    padding-right: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#output-top {
+    font-size: 1rem;
+}
+
+#output-main {
+    font-size: 3rem;
+}
+
+.btn {
+    background-color: var(--color-med);
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px var(--color-dark);
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--color-light);
+}
+
+.btn:active {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#equals-btn {
+    grid-column: span 2;
+    width: 6rem;
+    border-radius: 30px;
+}
